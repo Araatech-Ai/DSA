@@ -37,6 +37,22 @@ class SinglyLinkList:
             t1.next = temp
         else:
             self.head = temp
+
+    def DelNodeSLL(self, loc):
+        if self.head is None:
+            print("Empity list!")
+            return
+        if self.head.data == loc:
+            self.head = self.head.next
+            return
+        t1 = self.head
+        prev = None
+        while(t1 is not None and t1.data != loc):
+            prev = t1
+            t1 = t1.next
+        if t1 is None:
+            print("loc is not found!")
+        prev.next = t1.next
         
     def printLL(self):
         t1 = self.head
@@ -55,5 +71,7 @@ obj.InsertAtEnd(6)
 obj.InsertAtMid(2,2)
 obj.InsertAtMid(2,4)
 obj.InsertAtEnd(7)
+obj.DelNodeSLL(2)
+
 
 obj.printLL()
