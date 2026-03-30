@@ -78,7 +78,7 @@ class DoublyLinkedList():
             return
         t1 = self.head
         while(t1 is not None):
-            print (t1.data)
+            print (t1.data, end=" <--> ")
             t1 = t1.next 
         # print(t1.data)
 
