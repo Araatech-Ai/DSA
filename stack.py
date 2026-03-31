@@ -21,7 +21,7 @@ class Stack:
     # 1st Method
     # def peek(self):
     #     if len(self.s) == 0:
-    #         return f"stack is empity"                     
+    #         return f"Empity Stack"                     
     #     return self.s[0]
 
     
@@ -29,14 +29,14 @@ class Stack:
     def peek(self):
         ind = len(self.s) - 1
         if len(self.s) == 0:
-            return f"empity Stack"
+            return f"Empity Stack"
         return self.s[ind]  # also use -1 for the last index
     
 
     # 1st Method
     # def delete(self,):
     #     if len(self.s) == 0:
-    #         raise Exception("Stack is empity")
+    #         raise Exception("Empity Stack")
         
     #     self.s.pop(0)
 
@@ -44,7 +44,7 @@ class Stack:
     # 2nd Mathod
     def delete(self,):
         if len(self.s) == 0:
-            raise Exception("Stack is empity")
+            raise Exception("Empity Stack")
         
         self.s.pop()
         
