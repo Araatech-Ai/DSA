@@ -2,7 +2,7 @@ class Queue():
     def __init__(self):
         self.q = []
 
-    def add(self, value):
+    def Insert(self, value):
         self.q.append(value)
 
     def delete(self):
@@ -21,12 +21,14 @@ class Queue():
         return len(self.q)
     
 Q = Queue()
+
+
 print(Q.delete())
 print(Q.peek())
 print(Q.lenght())
-Q.add(1)
-Q.add(2)
-Q.add(3)
+Q.Insert(1)
+Q.Insert(2)
+Q.Insert(3)
 print(Q.delete())
 print(Q.peek())
 print(Q.lenght())
